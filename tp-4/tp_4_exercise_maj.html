@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+  <title>Tp 4 JavaScript</title>
+</head>
+<body>
+  <noscript> Allumez JavaScript!!! Ho Ho Ho</noscript>
+
+
+
+  <div class="container">
+    <div class="form-group">
+      <label for="lettre">Lettre:</label>
+      <input type="text" placeholder="Tapez une lettre" class="form-control" id="lettre" name="lettre">
+      <input class ="btn btn-info" type="button" name="chang" id="chang" value="Changer le premier lettre">
+    </div>
+
+    <div id="result" ></div>
+  </div>
+
+<script>
+
+document.getElementById('chang').addEventListener('click', (event) => { 
+    recup()
+}); 
+
+function recup(){
+let lettre = document.getElementById("lettre").value;
+let html = letMaj(lettre);
+document.getElementById('result').innerHTML = html;
+}
+
+
+function letMaj(l){  
+   return l.charAt(0).toUpperCase()+ l.slice(1);
+}
+
+
+</script>
+</body>
+</html>
