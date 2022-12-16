@@ -1,4 +1,5 @@
 import {CalculException} from './Exception.js';
+
 class Calcul {
     
     constructor(v1,v2) {

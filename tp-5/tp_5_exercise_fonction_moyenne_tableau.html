@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap-theme.min.css"
+    integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"
+    integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+    crossorigin="anonymous"></script>
+
+    <script type='module' src="./tp5js/ajout.js"></script>
+    <script type='module' src="./tp5js/moyenne.js"></script>
+    <script type='module' src="./tp5js/TestTable.js"></script>
+
+
+  <title>Tp 5 JavaScript</title>
+</head>
+
+<body>
+  <noscript> Allumez JavaScript!!!</noscript>
+
+
+  <div class="container">
+    <div class="form-group">
+      <label for="nom">Ajoutez une element dans le tableau:</label>
+      <input type="text" placeholder="Ajoutez une element" class="form-control" id="c1" name="c1">
+      <input class="btn btn-info" type="button" name="button1" id="ajout" value="Ajoutez!">
+      <input class="btn btn-success" type="button" name="button2" id="moyenne" value="Trouver moyenne">
+    </div>
+    <div id="array"></div>
+    <div id="result"></div>
+  </div>
+</body>
+</html>

@@ -1,6 +1,16 @@
 const CalculException = class extends Error {
   constructor() {
-    super('Entrez une chiffre!');
+    super('Erreur de chaine: ');
+    this.name = 'Entrez une chiffre!';
   }
 }
-export { CalculException }
+
+
+const TableException = class extends Error {
+  constructor() {
+    super('Erreur de tableau: ');
+    this.name = 'Le tableau est vide ou contenant une chaine de caractères!';
+  }
+}
+
+export { CalculException , TableException}
