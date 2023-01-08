@@ -5,8 +5,4 @@
           .then((out) => {
                document.querySelector('#donnes').innerHTML = out.time;
       }).catch(err => console.error(err));
-
-
-
-
      }
